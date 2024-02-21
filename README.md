@@ -5,9 +5,9 @@ Ce guide détaille les étapes nécessaires pour configurer un environnement de 
 
 ## Étapes d'Installation
 
-### Installer Npcap
+### Installer CMake
 
-1. Téléchargez Npcap depuis le site officiel : [Npcap](https://nmap.org/npcap/).
+1. Téléchargez CMake depuis le site officiel : [CMake](https://cmake.org/download/).
 2. Lancez l'installateur et suivez les instructions. Assurez-vous de sélectionner l'option pour installer les en-têtes et bibliothèques pour le développement.
 
 ### Installer MSYS2
