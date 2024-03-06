@@ -1,4 +1,4 @@
-# Bienvenue sur DeBlock
+# Bienvenue sur Retalbank
 # Configuration de l'Environnement de Développement C/C++ avec CMake.
 
 Ce guide détaille les étapes nécessaires pour configurer un environnement de développement en C/C++ avec CMake sur Visual Studio Code.
