@@ -3,6 +3,8 @@
 
 BackOffice::BackOffice(sql::Connection* connection) : con(connection) {}
 
+
+
 bool BackOffice::authenticate(const std::string& login, const std::string& password) {
     try {
         auto pstmt = con->prepareStatement("SELECT ID FROM banquiers WHERE Login = ? AND Password = ?");
