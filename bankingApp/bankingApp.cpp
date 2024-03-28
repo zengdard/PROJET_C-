@@ -7,6 +7,9 @@ BankingApp::BankingApp() {
 }
 
 
+
+
+
 void BankingApp::connectToDatabase() {
     try {
         // Use the MariaDB Connector/C++ to create a connection
