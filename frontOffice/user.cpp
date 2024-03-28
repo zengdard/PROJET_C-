@@ -68,6 +68,8 @@ std::vector<User::Account> User::listAccounts() {
         return accounts; // Return an empty vector
     }
 
+
+    
     try {
         auto pstmt = con->prepareStatement("SELECT Name, Solde, ID FROM CompteCourant WHERE ID_Utilisateur = ?");
         pstmt->setInt(1, userID);
