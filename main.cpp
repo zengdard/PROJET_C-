@@ -3,9 +3,6 @@
 #include "frontOffice/user.h"
 #include "backOffice/backOffice.h"
 
-
-
-
 int main() {
     BankingApp app;
     std::cout << "Choissisez le lieu de votre enregistrement" << std::endl;
@@ -48,21 +45,27 @@ int main() {
                 int somme;
                 switch(choice) {
                     case 1: {
-                        std::cout << "ID du compte à Créditer: " << std::endl;
-                        std::cin >> choice;
-                        std::cout << "somme à Créditer: " << std::endl;
-                        std::cin >> somme;
+                            std::cout << "ID du compte à Créditer: " << std::endl;
+                            std::cin >> choice;
+                            std::string account_type;
+                            std::cout << "Type de compte (PEL ou Livret C): " << std::endl;
+                            std::cin >> account_type;
+                            std::cout << "somme à Créditer: " << std::endl;
+                            std::cin >> somme;
 
-                        user.updateAccountBalance(somme, choice);
-                        break;
-                    }
-                    case 2: {
-                        std::cout << "ID du compte à Débiter: " << std::endl;
-                        std::cin >> choice;
-                        std::cout << "somme à Débiter: " << std::endl;
-                        std::cin >> somme;
-                        user.updateAccountBalance(-somme, choice);
-                        break;
+                            user.updateAccountBalance(somme, choice, account_type);
+                            break;
+                        }
+                        case 2: {
+                            std::cout << "ID du compte à Débiter: " << std::endl;
+                            std::cin >> choice;
+                            std::string account_type;
+                            std::cout << "Type de compte (PEL ou Livret C): " << std::endl;
+                            std::cin >> account_type;
+                            std::cout << "somme à Débiter: " << std::endl;
+                            std::cin >> somme;
+                            user.updateAccountBalance(-somme, choice, account_type);
+                            break;
                     }
                     case 3: {
                         std::vector<User::Account> accounts = user.listAccounts();
@@ -87,8 +90,6 @@ int main() {
 
             }
 
-
-            
         }
     }
     else {
