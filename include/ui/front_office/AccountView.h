@@ -1,0 +1,10 @@
+#ifndef RENTALBANK_ACCOUNTVIEW_H
+#define RENTALBANK_ACCOUNTVIEW_H
+
+
+class AccountView {
+
+};
+
+
+#endif //RENTALBANK_ACCOUNTVIEW_H

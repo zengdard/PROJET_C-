@@ -1,6 +1,3 @@
-# This CMake script is used to find the MariaDB C++ Connector library.
-
-# Define a CMake module to find MariaDB C++ Connector
 find_path(MARIADBCPP_INCLUDE_DIR mysql_driver.h
         PATHS /usr/include/mariadb /usr/local/include/mysql
         PATH_SUFFIXES mariadbcpp mariadb

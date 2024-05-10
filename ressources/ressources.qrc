@@ -1,0 +1,15 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file alias="home">icons/home.png</file>
+        <file alias="users-alt">icons/users-alt.png</file>
+        <file alias="accounts">icons/user.png</file>
+        <file alias="wire">icons/wire.png</file>
+        <file alias="history">icons/time-past.png</file>
+        <file alias="settings">icons/settings.png</file>
+        <file alias="execute">icons/bolt.png</file>
+        <file alias="money">icons/coins.png</file>
+        <file alias="arrow">icons/arrow.png</file>
+        <file alias="disconnect">icons/disconnect.png</file>
+    </qresource>
+</RCC>
